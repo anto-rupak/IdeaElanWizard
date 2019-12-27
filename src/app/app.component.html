@@ -1,0 +1,260 @@
+<div class="flex">
+  <h3>Welcome XXXXX XXXXX</h3>
+  <h6><b>Facility Name:</b>Mobile Facility</h6>
+  <form-wizard>
+    <wizard-step [title]="'Start'" (onNext)="onStep1Next($event)">
+      <img src="../assets/Screenshot from 2019-12-27 13-21-36.png" class="img-fluid" alt="Responsive image">
+
+    </wizard-step>
+    <wizard-step [title]="'Basic Details'" (onNext)="onStep2Next($event)">
+      <!--1st row-->
+      <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+        <div class="col">
+          <div class=row>
+            <div class="col-4" style="margin-top:10px;margin-left:8px">
+              Instrument Name
+            </div>
+            <div class="col-7">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class=row>
+            <div class="col-4" style="margin-top:10px;margin-left:8px">
+              Instrument Location
+            </div>
+            <div class="col-7">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class=row>
+            <div class="col-4" style="margin-top:10px;margin-left:8px">
+              Short Name
+            </div>
+            <div class="col-7">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--2nd row-->
+
+      <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+        <div class="col">
+          <div class=row>
+            <div class="col-4" style="margin-top:10px;margin-left:8px">
+              Category
+            </div>
+            <div class="col-7">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class=row>
+            <div class="col-4" style="margin-top:10px;margin-left:8px">
+              Group
+            </div>
+            <div class="col-7">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class=row>
+            <div class="col-4" style="margin-top:10px;margin-left:8px">
+              Application Tags
+            </div>
+            <div class="col-7">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--3rd row-->
+      <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+        <div class="col">
+          <div class=row>
+            <div class="col-4" style="margin-top:10px;margin-left:8px">
+              Billed On
+            </div>
+            <div class="col-7">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Actual Usage</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Scheduled Usage</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Custom</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class=row>
+            <div class="col-4" style="margin-top:10px;margin-left:8px">
+            </div>
+            <div class="col-7">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class=row>
+            <div class="col-4" style="margin-top:10px;margin-left:8px">
+              Service Date
+            </div>
+            <div class="col-7">
+              <form class="form-inline">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #d="ngbDatepicker">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--4th row-->
+      <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+        <div class="col">
+          <div class=row>
+            <div class="col-4" style="margin-top:10px;margin-left:8px">
+              Linked Instruments
+            </div>
+            <div class="col-7">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class=row>
+            <div class="col-4" style="margin-top:10px;margin-left:8px">
+            </div>
+            <div class="col-7">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+      
+        </div>
+      </div>
+      <!--5th row-->
+      <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+        <div class="col-2" style="margin-top:10px;margin-left:8px">
+          Special Instrucutions
+        </div>
+        <div class="col-9">
+          <textarea type="text" class="form-control"  ></textarea>
+        </div>
+      </div>
+    </wizard-step>
+    <wizard-step [title]="'Additional Details'" (onNext)="onStep3Next($event)">
+
+
+      <ul class="nav nav-tabs" style="margin-top: 20px;">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Manufacture Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Instrument Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help Files</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">DownTime</a>
+        </li>
+      </ul>
+      <kendo-grid [data]="sampleProducts" [height]="410">
+        <kendo-grid-column field="ProductID" title="ID" width="40">
+        </kendo-grid-column>
+        <kendo-grid-column field="ProductName" title="Name" width="250">
+        </kendo-grid-column>
+        <kendo-grid-column field="Category.CategoryName" title="Designation" width="150">
+        </kendo-grid-column>
+        <kendo-grid-column field="UnitPrice" title="Organization" width="80">
+        </kendo-grid-column>
+        <kendo-grid-column field="UnitsInStock" title="Phone" width="80">
+        </kendo-grid-column>
+    </kendo-grid>
+    </wizard-step>
+    <wizard-step [title]="'Step4'" (onComplete)="onComplete($event)">
+      <div [ngSwitch]="isCompleted">
+        <div *ngSwitchDefault>
+          <div class="card text-center">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Instrument Name: XXXX XXXX</h5>
+              <p class="card-text">
+                Category: Default
+              </p> 
+              <p class="card-text">
+                Group: Default
+              </p> <br/>
+              <a href="#" class="btn btn-primary">Instrument Details</a>
+            </div>
+  
+          </div>
+        </div>
+        <div *ngSwitchCase="true">
+          <h4>Thank you! You have completed all the steps.</h4>
+        </div>
+      </div>
+    </wizard-step>
+  </form-wizard>
+</div>
+
+
+<router-outlet></router-outlet>
